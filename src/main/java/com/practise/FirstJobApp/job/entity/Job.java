@@ -1,4 +1,4 @@
-package com.practise.FirstJobApp.entity;
+package com.practise.FirstJobApp.job.entity;
 
 
 public class Job {
