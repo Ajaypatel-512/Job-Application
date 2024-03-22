@@ -22,4 +22,14 @@ public class JobServiceImpl implements JobService {
         job.setId(nextId++);
         jobs.add(job);
     }
+
+    @Override
+    public Job findJobById(Long id) {
+        for (Job job: jobs) {
+            if (job.getId().equals(id)){
+                return job;
+            }
+        }
+        return null;
+    }
 }
