@@ -1,5 +1,6 @@
 package com.practise.FirstJobApp.job;
 
+import com.practise.FirstJobApp.company.entity.Company;
 import com.practise.FirstJobApp.job.entity.Job;
 import com.practise.FirstJobApp.job.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
