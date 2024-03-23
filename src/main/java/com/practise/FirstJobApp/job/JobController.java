@@ -49,7 +49,7 @@ public class JobController {
     }
 
     @PutMapping("/jobs/{id}")
-    public ResponseEntity<String> updateJob(@PathVariable Long id,RequestBody Job updatedJob){
+    public ResponseEntity<String> updateJob(@PathVariable Long id,@RequestBody Job updatedJob){
         boolean updated = jobService.updateJob(id,updatedJob);
         if (updated)
             return new ResponseEntity<>("Updated Job Successfully", HttpStatus.OK);
