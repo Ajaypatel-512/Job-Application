@@ -2,12 +2,12 @@ package com.practise.FirstJobApp.company.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.practise.FirstJobApp.job.entity.Job;
+import com.practise.FirstJobApp.review.entity.Review;
 import jakarta.persistence.*;
 
 import java.util.List;
 
 @Entity
-@Table(name = "company_table")
 public class Company {
 
     @Id
@@ -20,8 +20,8 @@ public class Company {
     @OneToMany(mappedBy = "company")
     private List<Job> jobs;
 
-//    @OneToMany
-//    private List<Review> reviews;
+    @OneToMany(mappedBy = "company")
+    private List<Review> reviews;
 
     public Company() {
     }
@@ -58,4 +58,11 @@ public class Company {
         this.jobs = jobs;
     }
 
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
+    }
 }
