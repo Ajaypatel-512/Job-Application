@@ -21,6 +21,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	runtimeOnly 'com.h2database:h2'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.apache.maven.plugins:maven-dependency-plugin:3.6.1'
+	implementation 'org.springframework.boot:spring-boot-maven-plugin:3.2.4'
+
 }
 
 tasks.named('test') {
