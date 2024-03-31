@@ -15,6 +15,7 @@ and the repository layer is for the CRUD operations to be performed on database.
 2. H2 database
 3. JPA
 4. Actuators
+5. Docker
 
 ### EndPoints
 JOB :
